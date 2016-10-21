@@ -1,6 +1,4 @@
-# CallKit
-
-## 简介
+# CallKi简介
 
 CallKit 是iOS10 推出的新框架。Callkit 包含两个方面的功能
 
@@ -15,8 +13,36 @@ Callkit 可以将你的Voip 通话级别上升到系统通话级别，可以实�
 
 ## 使用原生页面
 
+呈现来电页面:
 
 
-``` 
-sd
+
+```ruby
+- (void)initialProvider {
+
+CXProviderConfiguration *config = [self initialConfigration];
+
+self.provider = [[CXProvider alloc] initWithConfiguration:config];
+
+[self.provider setDelegate:self queue:dispatch_get_main_queue()];
+
+}
+
+- (CXProviderConfiguration *)initialConfigration {
+
+CXProviderConfiguration *config = [[CXProviderConfiguration alloc] initWithLocalizedName:self.appName];
+
+config.supportsVideo = YES;
+
+config.maximumCallsPerCallGroup = 1;
+
+config.supportedHandleTypes = [[NSSet alloc] initWithObjects:@(CXHandleTypePhoneNumber), nil];
+
+return config;
+
+}
+
 ```
+
+shen
+
