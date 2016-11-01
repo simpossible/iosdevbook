@@ -13,16 +13,15 @@ Callkit 可以将你的Voip 通话级别上升到系统通话级别，可以实�
 
 ## 使用原生页面
 
+## 重要类介绍
 
-
-##重要类介绍
 ```
-CXProvider : 可以看作一个向系统发送通知的类，通知系统来电话了，或则 呼叫。 
-CXCallUpdate: 通过传入这个对象对call的信息进行更新，这个信息会被保存在通讯录中。重要的是其中的Remotehandle，
+    CXProvider : 可以看作一个向系统发送通知的类，通知系统来电话了，或则 呼叫。 
+    CXCallUpdate: 通过传入这个对象对call的信息进行更新，这个信息会被保存在通讯录中。重要的是其中的Remotehandle，
               remotehandle 保存自己账号系统的账号， localizedCallerName 这个属性 在通讯录中的显示的名字。 
-CXCallController : 这个类可以告诉系统 当前应该执行什么操作，如对方挂断后，传入一个 CXEndCallAction 系统收到这个
+    CXCallController : 这个类可以告诉系统 当前应该执行什么操作，如对方挂断后，传入一个 CXEndCallAction 系统收到这个
                   事件就会结束掉本次通话的现实。 
-CXAction : 系统执行的事件，可以是 APP 层 通过 CXCallController 传入，也是 系统通过 provider 的回调回调回来。
+    CXAction : 系统执行的事件，可以是 APP 层 通过 CXCallController 传入，也是 系统通过 provider 的回调回调回来。
 
 ```
 
@@ -149,13 +148,11 @@ callupdtae.localizedCallerName = @"显示的名字";
 
 CallKit 所完成的内容其实是两个app 之间的通讯与交互。
 
-```
-
-```
+![](/Callkit.png)
 
 
 
+APP通过 Provider 把呼叫事件传入系统，并通过update 将呼叫的信息 发给系统并保存在通讯录。
 
-
-
+APP痛过CXController 把操作事件传入系统，系统 通过 Provider 把操作事件回调给 APP。
 
