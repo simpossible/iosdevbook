@@ -150,9 +150,15 @@ CallKit 所完成的内容其实是两个app 之间的通讯与交互。
 
 ![](/Callkit.png)
 
-
-
 APP通过 Provider 把呼叫事件传入系统，并通过update 将呼叫的信息 发给系统并保存在通讯录。
 
 APP痛过CXController 把操作事件传入系统，系统 通过 Provider 把操作事件回调给 APP。
+
+
+
+## 开发注意事项
+
+
+
+
 
