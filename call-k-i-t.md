@@ -98,7 +98,6 @@ callupdtae.localizedCallerName = @"显示的名字";
 
          [provider reportCallWithUUID:self.currentCall.UUID updated:callUpdate];`
 
-
 ### 挂断
 
         CXEndCallAction *action = [[CXEndCallAction alloc] initWithCallUUID:self.currentCall.UUID];`
@@ -146,23 +145,14 @@ callupdtae.localizedCallerName = @"显示的名字";
 
     }
 
-
-
 ## 总结：
-
-
 
 CallKit 所完成的内容其实是两个app 之间的通讯与交互。
 
- 
-```
 
 ```
+CXProvider 
 
-
-
-
-
-
+```
 
 
