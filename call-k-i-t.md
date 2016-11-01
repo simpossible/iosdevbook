@@ -18,9 +18,9 @@ Callkit 可以将你的Voip 通话级别上升到系统通话级别，可以实�
 ```
     CXProvider : 可以看作一个向系统发送通知的类，通知系统来电话了，或则 呼叫。 
     CXCallUpdate: 通过传入这个对象对call的信息进行更新，这个信息会被保存在通讯录中。重要的是其中的Remotehandle，
-              remotehandle 保存自己账号系统的账号， localizedCallerName 这个属性 在通讯录中的显示的名字。 
+                   remotehandle 保存自己账号系统的账号， localizedCallerName 这个属性 在通讯录中的显示的名字。 
     CXCallController : 这个类可以告诉系统 当前应该执行什么操作，如对方挂断后，传入一个 CXEndCallAction 系统收到这个
-                  事件就会结束掉本次通话的现实。 
+                        事件就会结束掉本次通话的现实。 
     CXAction : 系统执行的事件，可以是 APP 层 通过 CXCallController 传入，也是 系统通过 provider 的回调回调回来。
 
 ```
@@ -154,9 +154,32 @@ APP通过 Provider 把呼叫事件传入系统，并通过update 将呼叫的信
 
 APP痛过CXController 把操作事件传入系统，系统 通过 Provider 把操作事件回调给 APP。
 
-
-
 ## 开发注意事项
+
+
+
+* provider 被 dealloc 后 会产生和  `[provider invalidate]  一样的效果`
+
+* provider 的回调中 需要调用 ` [action fulfill];  来完成当前操作。`
+
+* 在  `reportNewIncomingCallWithUUID  之前 需要调用`
+
+
+`     [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];` 
+
+           不然接通后没有声音。
+
+* 在系统界面开启免提没有回调，但是切换依然有效
+
+
+
+
+
+
+
+
+
+
 
 
 
