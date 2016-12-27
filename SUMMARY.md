@@ -9,7 +9,6 @@
     * CoreData
 * [开发问题合集](开发问题合集.md)
     * [pod push](pod-push.md)
-* [pod问题解决](pod问题解决.md)
 * [好文章推荐](好文章推荐.md)
 * [三方组件使用](三方组件使用.md)
 
