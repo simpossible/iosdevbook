@@ -1,12 +1,4 @@
-# 实用文章 博客推荐
-
-
-
-## xcode 插件
-
 http:\/\/www.cocoachina.com\/ios\/20150713\/12503.html \/\/ios插件
-
-
 
 http:\/\/www.cocoachina.com\/industry\/20140527\/8565.html \/\/pop animation
 
@@ -16,13 +8,7 @@ http:\/\/www.tuicool.com\/articles\/FfEBRf7 \/\/cgcontext
 
 http:\/\/www.cnblogs.com\/pengyingh\/articles\/2396032.html \/\/cor animation
 
-## auto layout
-
 http:\/\/xuexuefeng.com\/autolayout\/ \/\/auto layout vincent个人网站。写的很好！
-
-
-
-## core animation
 
 http:\/\/www.cocoachina.com\/ios\/20150104\/10814.html \/\/core animation 详解
 
@@ -38,31 +24,19 @@ http:\/\/www.cocoachina.com\/ios\/20150106\/10839.html
 
 http:\/\/www.cocoachina.com\/ios\/20150106\/10840.html
 
-
-
-## 转场动画
-
 http:\/\/www.cocoachina.com\/ios\/20150719\/12600.html \/\/自定义转场动画
 
 http:\/\/www.cocoachina.com\/ios\/20150727\/12720.html \/\/加快开发进度
 
 http:\/\/www.cocoachina.com\/ios\/20150605\/11998.html \/\/遮罩转场
 
+252839895
 
-
-## open Gl
+说
 
 http:\/\/www.cocoachina.com\/game\/20150811\/12969.html \/\/opengl
 
-
-
-## audio session
-
 http:\/\/www.cocoachina.com\/ios\/20140717\/9162.html \/\/音频
-
-http:\/\/blog.csdn.net\/nogodoss\/article\/details\/10535729 \/\/音频录制
-
-## 创意
 
 https:\/\/github.com\/devSC\/WSProgressHUD
 
@@ -74,9 +48,9 @@ ninjanetic.com\/how-to-get-started-with-webrtc-and-ios-without-wasting-10-hours-
 
 http:\/\/blog.it985.com\/7654.html
 
+http:\/\/blog.csdn.net\/nogodoss\/article\/details\/10535729
 
-
-
+ha1099 刘玲玲
 
  if \(\[self.navigationController respondsToSelector:@selector\(interactivePopGestureRecognizer\)\]\) {
 
