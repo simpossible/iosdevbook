@@ -1,10 +1,10 @@
-Tips\(开发中的一些小代码\)
+# Tips\(开发中的一些小代码\)
 
-手势禁用
+## 手势禁用
 
-` if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {`
+`if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {`
 
-` self.navigationController.interactivePopGestureRecognizer.enabled = NO;`
+`self.navigationController.interactivePopGestureRecognizer.enabled = NO;`
 
-` }`
+`}`
 
