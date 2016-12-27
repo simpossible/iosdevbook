@@ -9,6 +9,7 @@
     * [CoreData](coredata.md)
 * [开发问题合集](开发问题合集.md)
     * [pod push](pod-push.md)
+    * [ruby](ruby.md)
 * [好文章推荐](好文章推荐.md)
     * [core animation](core-animation.md)
 * [三方组件使用](三方组件使用.md)
