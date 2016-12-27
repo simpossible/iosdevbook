@@ -7,6 +7,7 @@
     * [证书](证书.md)
     * [PushKit](push.md)
     * [CoreData](coredata.md)
+    * [手势禁用](手势禁用.md)
 * [开发问题合集](开发问题合集.md)
     * [pod push](pod-push.md)
     * [ruby](ruby.md)
