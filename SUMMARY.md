@@ -7,10 +7,11 @@
     * [证书](证书.md)
     * [PushKit](push.md)
     * [CoreData](coredata.md)
-    * [手势禁用](手势禁用.md)
 * [开发问题合集](开发问题合集.md)
     * [pod push](pod-push.md)
     * [ruby](ruby.md)
+* [手势禁用](手势禁用.md)
 * [好文章推荐](好文章推荐.md)
 * [三方组件使用](三方组件使用.md)
+* [IOSTip](iostip.md)
 
