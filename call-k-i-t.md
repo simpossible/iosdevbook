@@ -1,4 +1,4 @@
-# CallKi简介
+# CallKit简介
 
 CallKit 是iOS10 推出的新框架。Callkit 包含两个方面的功能
 
@@ -156,32 +156,18 @@ APP痛过CXController 把操作事件传入系统，系统 通过 Provider 把�
 
 ## 开发注意事项
 
-
-
 * provider 被 dealloc 后 会产生和  `[provider invalidate]  一样的效果`
 
-* provider 的回调中 需要调用 ` [action fulfill];  来完成当前操作。`
+* provider 的回调中 需要调用 `[action fulfill];  来完成当前操作。`
 
 * 在  `reportNewIncomingCallWithUUID  之前 需要调用`
 
 
-`     [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];` 
+`[[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];`
 
-           不然接通后没有声音。
+```
+       不然接通后没有声音。
+```
 
 * 在系统界面开启免提没有回调，但是切换依然有效
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
