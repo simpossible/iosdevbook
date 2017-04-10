@@ -20,7 +20,7 @@ Callkit 可以将你的Voip 通话级别上升到系统通话级别，可以实�
     CXCallUpdate: 通过传入这个对象对call的信息进行更新，这个信息会被保存在通讯录中。重要的是其中的Remotehandle，
                    remotehandle 保存自己账号系统的账号， localizedCallerName 这个属性 在通讯录中的显示的名字。 
     CXCallController : 这个类可以告诉系统 当前应该执行什么操作，如对方挂断后，传入一个 CXEndCallAction 系统收到这个
-                        事件就会结束掉本次通话的现实。 
+                        事件就会结束掉本次通话的显示。 
     CXAction : 系统执行的事件，可以是 APP 层 通过 CXCallController 传入，也是 系统通过 provider 的回调回调回来。
 
 ```
