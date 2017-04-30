@@ -7,7 +7,7 @@
     * [证书](证书.md)
     * [PushKit](push.md)
     * [CoreData](coredata.md)
-    * [RelayKit](relaykit.md)
+    * [ReplayKit](relaykit.md)
     * [IP](ip.md)
 * [开发问题合集](开发问题合集.md)
     * [pod push](pod-push.md)
