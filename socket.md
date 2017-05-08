@@ -86,11 +86,14 @@
 
 * 接收数据
 
-  面向连接
+  > 面向连接
+  > 
+  >        int recv\( \_In\_ SOCKET s, \_Out\_ char \*buf, \_In\_ int len, \_In\_ int flags\);
+  > 
+  > 无连接
+  > 
+  >        ssize\_t recvfrom\(int sockfd, void \*buff, size\_t buffsize, int flag, struct sockaddr \*senderaddr , socklen\_t \*addrlen\)
 
-* int recv\( \_In\_ SOCKET s, \_Out\_ char \*buf, \_In\_ int len, \_In\_ int flags\);
-
-* 无连接
 
 ### 附加说明
 
