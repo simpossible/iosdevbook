@@ -120,3 +120,5 @@
 
 SOCK\_STREAM：这个的数据会以流的方式进行,只有在面向连接的socket 上才有用，如TCP
 
+SOCK\_DGRAM：
+
