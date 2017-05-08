@@ -35,12 +35,20 @@
 ### socket api
 
 * 创建socket
-  int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
-
+  int socket\( int af, int type, int protocol\);
+  example 
+        int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
+   @param af 这个是socket 类型 参数目前固定为 AF\_INET 
+  @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET         
+  @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
 * 绑定端口
+
 * 监听
+
 * 连接
+
 * 发送数据
 * 接收数据
-* 
 
+附件数码
+SOCK\_STREAM：这个的数据会以流的方式进行,只有在面向连接的socket 上才有用，如TCP
