@@ -36,12 +36,12 @@
 
 * 创建socket
 
-    int socket\( int af, int type, int protocol\);
-    example
-    int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
-    @param af 这个是socket 类型 参数目前固定为 AF\_INET 
-    @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET
-    @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
+  > int socket\( int af, int type, int protocol\);
+  >   example
+  >   int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
+  >   @param af 这个是socket 类型 参数目前固定为 AF\_INET 
+  >   @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET
+  >   @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
 
 * 绑定端口
 
@@ -57,9 +57,31 @@
 
 * 监听
 
+  > int listen\( int sockfd, int backlog\);
+  > example
+  > int state = listen\(\_socket, number\) 
+  > @param sockfd 创建socket 得到的返回值
+  > 
+  > @param backlog 等待连接队列的最大长度
+
 * 连接
 
+  > 服务端
+  > int accept\(int sockfd, struct sockaddr \*addr, socklen\_t \*addrlen\);
+  > 客户端
+  > int connect\(int s, const struct sockaddr \* name, int namelen\);
+
 * 发送数据
+
+  面向连接
+         size\_t send\(int sockfd, const void \*buff, size\_t nbytes, int flags\)      
+        @param sockfd accept 的返回值\(服务端\)，或者 创建的socket\(客户端\)
+  无连接
+       int sendto\(int sockfd, const void \* buffer, int len, unsigned int flags, const struct sockaddr \* to, int tolen\);
+       @param sockfd 创建的socket 
+       @param buffer 发送的数据
+       @param len 发送的数据长度
+       @param flag 暂时写 0 其他值的话，发送方式会发生改变
 
 * 接收数据
 
