@@ -76,8 +76,12 @@
   面向连接
          size\_t send\(int sockfd, const void \*buff, size\_t nbytes, int flags\)
 
-        @param sockfd accept 的返回值\(服务端\)，或者 创建的socket\(客户端\)
-  无连接
+
+
+@param sockfd accept 的返回值\(服务端\)，或者 创建的socket\(客户端\)
+
+
+无连接
        int sendto\(int sockfd, const void \* buffer, int len, unsigned int flags, const struct sockaddr \* to, int addrlen\);
        @param sockfd 创建的socket 
        @param buffer 发送的数据
@@ -85,7 +89,6 @@
        @param flag 暂时写 0 其他值的话，发送方式会发生改变
 
 * 接收数据
-
 
 ### 附加说明
 
