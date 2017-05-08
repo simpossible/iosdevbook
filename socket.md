@@ -37,11 +37,16 @@
 * 创建socket
 
   > int socket\( int af, int type, int protocol\);
-  >   example
-  >   int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
-  >   @param af 这个是socket 类型 参数目前固定为 AF\_INET 
-  >   @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET
-  >   @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
+  > 
+  > example
+  > 
+  > int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
+  > 
+  > @param af 这个是socket 类型 参数目前固定为 AF\_INET
+  > 
+  > @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET
+  > 
+  > @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
 
 * 绑定端口
 
@@ -52,14 +57,19 @@
   > int state = bind\(\_socket, \(struct sockaddr \*\)&addr, addr.sin\_len\);
   > 
   > @param sockfd 上一步创建socket 得到的返回值。socket
+  > 
   > @param my\_addr 绑定的网络地址。 sockaddr\_in  与 sockaddr 本质上是同一类型。一般用强转方式使用
+  > 
   > @param addrlen my\_addr 的对象大小 用sizeof 进行传入就ok了。
 
 * 监听
 
   > int listen\( int sockfd, int backlog\);
+  > 
   > example
-  > int state = listen\(\_socket, number\) 
+  > 
+  > int state = listen\(\_socket, number\)
+  > 
   > @param sockfd 创建socket 得到的返回值
   > 
   > @param backlog 等待连接队列的最大长度
@@ -88,11 +98,15 @@
 
   > 面向连接
   > 
-  >        int recv\( \_In\_ SOCKET s, \_Out\_ char \*buf, \_In\_ int len, \_In\_ int flags\);
+  > 
+  >    int recv\(\_In\_ SOCKET s, \_Out\_ char \*buf, \_In\_ int len, \_In\_ int flags\);
+  > 
   > 
   > 无连接
   > 
-  >        ssize\_t recvfrom\(int sockfd, void \*buff, size\_t buffsize, int flag, struct sockaddr \*senderaddr , socklen\_t \*addrlen\)
+  > 
+  >    ssize\_t recvfrom\(int sockfd, void \*buff, size\_t buffsize, int flag, struct sockaddr \*senderaddr , socklen\_t \*addrlen\)
+  > 
 
 
 ### 附加说明
