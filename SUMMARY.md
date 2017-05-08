@@ -4,6 +4,7 @@
 * [开发工具介绍](开发工具介绍.md)
 * [开发日志](开发日志.md)
     * [CallKit](call-k-i-t.md)
+    * [Socket](socket.md)
     * [证书](证书.md)
     * [PushKit](push.md)
     * [CoreData](coredata.md)
