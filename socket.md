@@ -11,7 +11,7 @@
 ```
           socket 对于我们程序员来说 就是一套api 的称呼，和openGL 一样。但是在编码中，我们常会说：创建一个socket，或者
 
-创建一个套接字。这里的socket 就是socket 这套api 的设计中的理念来。socket 在英文中的概念是“插座”、“孔”。不过可以这样理
+创建一个套接字。这里的socket 就是socket 这套api 的设计理念中的对象。socket 在英文中的概念是“插座”、“孔”。不过可以这样理
 
 解：一次数据交换至少发生在双方之间。那么这次交换的任意一方就是一个socket。socket 的数据交换可以发生在两个进程之间。这两个进程
 
@@ -85,21 +85,25 @@
 
   > 面向连接
   > 
-  >        size\_t send\(int sockfd, const void \*buff, size\_t nbytes, int flags\)
+  > ```
+  >    size\_t send\(int sockfd, const void \*buff, size\_t nbytes, int flags\)
   > 
-  >        @param sockfd accept 的返回值\(服务端\)，或者 创建的socket\(客户端\)
+  >    @param sockfd accept 的返回值\(服务端\)，或者 创建的socket\(客户端\)
+  > ```
   > 
   > 无连接
   > 
-  >        int sendto\(int sockfd, const void \* buffer, int len, unsigned int flags, const struct sockaddr \* to, int addrlen\)
+  > ```
+  >    int sendto\(int sockfd, const void \* buffer, int len, unsigned int flags, const struct sockaddr \* to, int addrlen\)
   > 
-  >        @param sockfd 创建的socket 
+  >    @param sockfd 创建的socket 
   > 
-  >        @param buffer 发送的数据
+  >    @param buffer 发送的数据
   > 
-  >        @param len 发送的数据长度
+  >    @param len 发送的数据长度
   > 
-  >        @param flag 暂时写 0 其他值的话，发送方式会发生改变
+  >    @param flag 暂时写 0 其他值的话，发送方式会发生改变
+  > ```
 
 * 接收数据
 
