@@ -28,7 +28,7 @@
                    *  ip  tcp/udp *   http/rtmp/
                     *****socket****
       socket 工作在网络层以及传输层。提供一组原语操作：
-      LISTEN CONNECT ACCEPT RECEIVE SEND DISCONNECT ---
+      LISTEN CONNECT ACCEPT RECEIVE SEND DISCONNECT BIND ---
       根据这些原语可以组成我们的服务，比如常见的IM 服务。HTTP 服务.等
 ```
 
@@ -36,16 +36,24 @@
 
 * 创建socket
 
-  ```
-  int socket( int af, int type, int protocol);
-  example 
-    int socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-    @param af 这个是socket 类型 参数目前固定为 AF_INET 
-    @param type  数据的传输方式。可选值 SOCK_DGRAM  SOCK_STREAM  SOCK_RAW  SOCK_RDM   SOCK_SEQPACKET
-    @param IPPROTO_TCP TCP 协议，当然还有udp rdp 等协议
-  ```
+    int socket\( int af, int type, int protocol\);
+    example
+    int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
+    @param af 这个是socket 类型 参数目前固定为 AF\_INET 
+    @param type  数据的传输方式。可选值 SOCK\_DGRAM  SOCK\_STREAM  SOCK\_RAW  SOCK\_RDM   SOCK\_SEQPACKET
+    @param IPPROTO\_TCP TCP 协议，当然还有udp rdp 等协议
 
 * 绑定端口
+
+  > int bind\(int sockfd, struct sockaddr \* my\_addr, int addrlen\)
+  > 
+  > example
+  > 
+  > int state = bind\(\_socket, \(struct sockaddr \*\)&addr, addr.sin\_len\);
+  > 
+  > @param sockfd 上一步创建socket 得到的返回值。socket
+  > @param my\_addr 绑定的网络地址。 sockaddr\_in  与 sockaddr 本质上是同一类型。一般用强转方式使用
+  > @param addrlen my\_addr 的对象大小 用sizeof 进行传入就ok了。
 
 * 监听
 
@@ -56,6 +64,7 @@
 * 接收数据
 
 
-附件数码
+### 附加说明
+
 SOCK\_STREAM：这个的数据会以流的方式进行,只有在面向连接的socket 上才有用，如TCP
 
