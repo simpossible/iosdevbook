@@ -28,9 +28,8 @@
                    *  ip  tcp/udp *   http/rtmp/
                     *****socket****
       socket 工作在网络层以及传输层。提供一组原语操作：
-      LISTEN CONNECT ACCEPT RECEIVE SEND DISCONNECT
-
-
+      LISTEN CONNECT ACCEPT RECEIVE SEND DISCONNECT ---
+      根据这些原语可以组成我们的服务，比如常见的IM 服务。
 ```
 
 ### socket api
