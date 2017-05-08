@@ -35,6 +35,8 @@
 ### socket api
 
 * 创建socket
+  int socket = socket\(AF\_INET, SOCK\_STREAM, IPPROTO\_TCP\);
+
 * 绑定端口
 * 监听
 * 连接
