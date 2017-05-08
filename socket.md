@@ -35,14 +35,15 @@
 ### socket api
 
 * 创建socket
-  ```
-int socket( int af, int type, int protocol);
-  example 
-    int socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);```
 
-  @param af 这个是socket 类型 参数目前固定为 AF_INET 
-    @param type  数据的传输方式。可选值 SOCK_DGRAM  SOCK_STREAM  SOCK_RAW  SOCK_RDM   SOCK_SEQPACKET````@param IPPROTO_TCP TCP 协议，当然还有udp rdp 等协议
-```
+  ```
+  int socket( int af, int type, int protocol);
+  example 
+    int socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    @param af 这个是socket 类型 参数目前固定为 AF_INET 
+    @param type  数据的传输方式。可选值 SOCK_DGRAM  SOCK_STREAM  SOCK_RAW  SOCK_RDM   SOCK_SEQPACKET
+    @param IPPROTO_TCP TCP 协议，当然还有udp rdp 等协议
+  ```
 
 * 绑定端口
 
