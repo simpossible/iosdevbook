@@ -79,16 +79,15 @@ IBLKeyChainGPItem *gpItem = [[IBLKeyChainGPItem alloc] init];
 gpItem.itemAccount = @“user”;
 gpItem.itemValueData = [@"password" dataUsingEncoding:NSUTF8StringEncoding];
 gpItem.itemService = @"ftp";
-
 gpItem.itemLabel = @"hehe";
-
 gpItem.itemGeneric = @"generic"
 gpItem.itemType = @"type";
-
 gpItem.itemComment = @"comm";
-
 gpItem.itemDescription = @"des";
+
 OSStatus a = [[IBLKeyChainAccessor defaultAccessor] storeItem:gpItem];
 
 ```
+
+
 
