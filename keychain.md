@@ -19,7 +19,6 @@ keychain 的元组有5种类型：
 
 每一种类型支持的字段是不一样的。需要作出分别。
 
-
 ## KeyChian 共享方式
 
 我们这里不讨论macOS，在 iOS 中只有一个KeyChain。KeyChain 会通过两种方式来控制访问权限：
@@ -29,17 +28,19 @@ keychain 的元组有5种类型：
 * AccessGroup,Xcode 在开启Keychain Share 的时候又一个 access group。很多开始用的人会因为对这个组的理解不正确
 
 
-       导致一些无法共享的情况，每个元组有一个所属的AccessGroup，当一个应用在读取这个元组的时候，KeyChian 会将这个
+```
+   导致一些无法共享的情况，每个元组有一个所属的AccessGroup，当一个应用在读取这个元组的时候，KeyChian 会将这个
 
-       AccessGroup 与当前应用的所有 AccessGroup 比较。如果当前的 group 列表中包含了它所属的AccessGroup 那么就拥有
+   AccessGroup 与当前应用的所有 AccessGroup 比较。如果当前的 group 列表中包含了它所属的AccessGroup 那么就拥有
 
-       访问权限。每个元组的所属AccessGroup 是当前应用的group列表的第一个值。当存储成功后能获取到。
+   访问权限。每个元组的所属AccessGroup 是当前应用的group列表的第一个值。当存储成功后能获取到。
+```
 
 ## 通用密码存储
 
 通用密码的存储方法如下
 
-accessgroup + account + service ---&gt; valueData
+accessgroup\(自动生成\) + account + service ---&gt; valueData
 
 在这中模式下还拥有其他的key值
 
@@ -66,6 +67,7 @@ accessgroup + account + service ---&gt; valueData
 * Generic
 
 * Synchoronizable
+
 
 这些值在创建后不能修改。只有valuedata 能通过 secUpdate 的函数进行修改。
 
