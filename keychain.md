@@ -71,3 +71,24 @@ accessgroup\(自动生成\) + account + service\(可为空\) ---&gt; valueData
 
 这些值在创建后不能修改。只有valuedata 能通过 secUpdate 的函数进行修改。
 
+用 IBLKeyChain 的库，使用方式为：
+
+`IBLKeyChainGPItem *gpItem = [[IBLKeyChainGPItem alloc] init];
+
+gpItem.itemAccount = @“user”;
+ gpItem.itemValueData = [@"password" dataUsingEncoding:NSUTF8StringEncoding];
+gpItem.itemService = @"ftp";
+
+ gpItem.itemLabel = @"hehe";
+
+ gpItem.itemGeneric = @"generic"
+gpItem.itemType = @"type";
+
+ gpItem.itemComment = @"comm";
+
+ gpItem.itemDescription = @"des";
+OSStatus a = [[IBLKeyChainAccessor defaultAccessor] storeItem:gpItem];
+
+`
+
+
