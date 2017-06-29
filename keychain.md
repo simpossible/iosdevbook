@@ -40,7 +40,7 @@ keychain 的元组有5种类型：
 
 通用密码的存储方法如下
 
-accessgroup\(自动生成\) + account + service ---&gt; valueData
+accessgroup\(自动生成\) + account + service\(可为空\) ---&gt; valueData
 
 在这中模式下还拥有其他的key值
 
@@ -70,6 +70,4 @@ accessgroup\(自动生成\) + account + service ---&gt; valueData
 
 
 这些值在创建后不能修改。只有valuedata 能通过 secUpdate 的函数进行修改。
-
-
 
