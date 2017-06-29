@@ -73,22 +73,21 @@ accessgroup\(自动生成\) + account + service\(可为空\) ---&gt; valueData
 
 用 IBLKeyChain 的库，使用方式为：
 
-`IBLKeyChainGPItem *gpItem = [[IBLKeyChainGPItem alloc] init];
+```IBLKeyChainGPItem \*gpItem = \[\[IBLKeyChainGPItem alloc\] init\];
 
 gpItem.itemAccount = @“user”;
- gpItem.itemValueData = [@"password" dataUsingEncoding:NSUTF8StringEncoding];
+gpItem.itemValueData = \[@"password" dataUsingEncoding:NSUTF8StringEncoding\];
 gpItem.itemService = @"ftp";
 
- gpItem.itemLabel = @"hehe";
+gpItem.itemLabel = @"hehe";
 
- gpItem.itemGeneric = @"generic"
+gpItem.itemGeneric = @"generic"
 gpItem.itemType = @"type";
 
- gpItem.itemComment = @"comm";
+gpItem.itemComment = @"comm";
 
- gpItem.itemDescription = @"des";
-OSStatus a = [[IBLKeyChainAccessor defaultAccessor] storeItem:gpItem];
+gpItem.itemDescription = @"des";
+OSStatus a = \[\[IBLKeyChainAccessor defaultAccessor\] storeItem:gpItem\];
 
-`
-
+```
 
