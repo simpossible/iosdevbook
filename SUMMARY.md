@@ -4,6 +4,7 @@
 * [开发工具介绍](开发工具介绍.md)
 * [开发日志](开发日志.md)
     * [CallKit](call-k-i-t.md)
+    * [MDM](mdm.md)
     * [Socket](socket.md)
     * [屏幕采集技术](屏幕直播技术.md)
     * [KeyChain](keychain.md)
