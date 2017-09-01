@@ -7,7 +7,7 @@
 * ## [三方组件使用](三方组件使用.md)
 * ## [React Native](react-native.md)
 * ## [开发工具介绍](开发工具介绍.md)
-* ## 一些思考
+* ## [一些思考](yi-xie-si-kao.md)
 
 
 
