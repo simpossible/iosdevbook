@@ -28,6 +28,7 @@
    [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:(tbl)]
    
    NSString *word = IBLTLocalizedString(@"test");
+   NSString *myWord = IBLTLocalizedString(@"test",@"my");
   ```
  
 
