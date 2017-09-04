@@ -28,6 +28,7 @@
    [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:(tbl)]
    
    NSString *word = IBLTLocalizedString(@"test");
+   //在 my.strings 中查找文件
    NSString *myWord = IBLTLocalizedString(@"test",@"my");
   ```
  
