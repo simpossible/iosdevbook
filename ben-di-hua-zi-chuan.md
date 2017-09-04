@@ -26,6 +26,8 @@
   /**这里的tbl 就是字串文件的名字。EXP：test.string tbl=test*/
   #define IBLTLocalizedString(key,tbl)\
    [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:(tbl)]
+   
+   NSString *word = IBLTLocalizedString(@"test");
   ```
  
 
