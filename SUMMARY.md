@@ -13,6 +13,7 @@
   * [PushKit](push.md)
   * [IP](ip.md)
   * [证书](证书.md)
+  * [本地化字串](ben-di-hua-zi-chuan.md)
 * [开发问题合集](开发问题合集.md)
   * [pod push](pod-push.md)
   * [Reveal 破解](reveal-破解.md)
