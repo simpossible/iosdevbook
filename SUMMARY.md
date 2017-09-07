@@ -23,4 +23,5 @@
 * [IOSTip](iostip.md)
 * [React Native](react-native.md)
 * [一些思考](yi-xie-si-kao.md)
+* [test](test.md)
 
