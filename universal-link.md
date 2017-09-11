@@ -47,9 +47,10 @@ touch touch apple-app-site-association
 ```
 
 * 拷贝 json
-```
-/**appid 为 TeamId(可以在membercenter 中看到).bundleId*/
-{
+
+  ```
+  /**appid 为 TeamId(可以在membercenter 中看到).bundleId*/
+  {
     "applinks": {
         "apps": [],
         "details": [
@@ -63,32 +64,18 @@ touch touch apple-app-site-association
             }
         ]
     }
-}
-```
+  }
+  ```
 
-* 上传到服务端
+* 上传到服务端根目录 或者 .well-known 目录下
 
+_\*_ 特性
 
+* 跨域问题
+  9.2 版本后就只能跨域才能触发universallink。
+* 测试跨域问题我做了以下的测试得出以下结论。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](/assets/universallink-cross-domain.png)
 
 
 
