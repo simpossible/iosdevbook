@@ -7,3 +7,9 @@
 [52tt.com](https://52tt.com)
 
 [52tt.com/a](https://52tt.com/a)
+
+[bpp.52tt.com/universallink/a](https://bpp.52tt.com/universallink/a)
+
+[52tt.com/universallink/a](https://52tt.com/universallink/a)
+
+
