@@ -77,11 +77,13 @@ touch touch apple-app-site-association
 
 ![](/assets/universallink-cross-domain.png)
 
-* 适配性 
+## 适配性（应用跳转解决方案设计者需注意）
 
-Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 内置浏览器可以进行跳转。
+ Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 内置浏览器可以进行跳转。
 需要注意的事项：
-1.universal link 不能使用universal-link 进行唤起。应该使用a标签
-```<a src="https:mydomain/?pa=xxx">link</aa>```
-2.qq，微信中 universal-link 如果是使用js 进行拼接的话。这个链接是无效的。
+* universal link 不能使用universal-link 进行唤起。应该使用a标签，或者其他静态方式
+
+```<a src="https:mydomain/?pa=xxx">link</a>```
+
+* qq，微信中 universal-link 的连接参数如果是使用js 进行拼接的话。这个链接是无效的。
 safari 中可以。
