@@ -87,3 +87,11 @@ touch touch apple-app-site-association
 
 * qq，微信中 universal-link 的连接参数如果是使用js 进行拼接的话。这个链接是无效的。
 safari 中可以。
+
+以下是一些总结性的博客:
+[http://www.gexiao.me/2016/03/10/iOS9-universal-links/](http://www.gexiao.me/2016/03/10/iOS9-universal-links/)
+
+[http://www.gexiao.me/2016/03/10/iOS9-universal-links/](http://www.gexiao.me/2016/03/10/iOS9-universal-links/)
+
+[http://www.bijishequ.com/detail/521297?p=](http://www.bijishequ.com/detail/521297?p=)
+
