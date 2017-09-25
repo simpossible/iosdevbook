@@ -91,11 +91,11 @@ Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 safari 可
 
 * 部分第三方浏览器是无效的，目前测试的有 UC，QQ浏览器 无效。chrome 有效（表现与qq内置一致）
 
-* 浏览器支持做了以下统计
+* 针对浏览器是否支持跳转应用做了以下统计
 
-* 
-* 
-以下是一些总结性的博客:
+![](/assets/webbrosersupport)
+
+* 以下是一些总结性的博客:
 
 [http://www.gexiao.me/2016/03/10/iOS9-universal-links/](http://www.gexiao.me/2016/03/10/iOS9-universal-links/)
 
