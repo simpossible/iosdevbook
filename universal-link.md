@@ -79,7 +79,7 @@ touch touch apple-app-site-association
 
 ## 适配性（应用跳转解决方案设计者需注意）
 
-Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 safari 可以进行跳转。  
+Universal-Link 是可以进行通用跳转，目前测试 QQ，微信， safari，chrome 可以进行跳转。  
 需要注意的事项：
 
 * universal link 不能使用 JS 进行唤起。  
@@ -93,7 +93,9 @@ Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 safari 可
 
 * 针对浏览器是否支持跳转应用做了以下统计
 
-         ![](/assets/webbrosersupport)  
+  ```
+     ![](/assets/webbrosersupport)  
+  ```
 
 * 以下是一些总结性的博客:
 
