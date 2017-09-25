@@ -69,7 +69,7 @@ touch touch apple-app-site-association
 
 * 上传到服务端根目录 或者 .well-known 目录下
 
-_\*_ 特性
+* 特性
 
 * 跨域问题
   9.2 版本后就只能跨域才能触发universallink。
@@ -77,5 +77,5 @@ _\*_ 特性
 
 ![](/assets/universallink-cross-domain.png)
 
-
+** 
 
