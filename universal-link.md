@@ -81,7 +81,7 @@ touch touch apple-app-site-association
 
  Universal-Link 是可以进行通用跳转，目前测试 QQ，微信 内置浏览器可以进行跳转。
 需要注意的事项：
-* universal link 不能使用universal-link 进行唤起。应该使用a标签，或者其他静态方式
+* universal link 不能使用 JS 进行唤起。应该使用a标签，或者其他静态方式
 
 ```<a src="https:mydomain/?pa=xxx">link</a>```
 
