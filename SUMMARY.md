@@ -17,12 +17,13 @@
   * [Universal-Link](universal-link.md)
 * [开发问题合集](开发问题合集.md)
   * [pod push](pod-push.md)
+  * [编译错误集锦](bian-yi-cuo-wu-ji-jin.md)
   * [Reveal 破解](reveal-破解.md)
   * [ruby](ruby.md)
+* 编译错误集锦
 * [好文章推荐](好文章推荐.md)
 * [三方组件使用](三方组件使用.md)
 * [IOSTip](iostip.md)
 * [React Native](react-native.md)
 * [一些思考](yi-xie-si-kao.md)
-* [test](test.md)
 
