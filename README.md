@@ -22,7 +22,7 @@
 <br \>
 
                     
-                         [渝ICP备15010739号](http://www.miibeian.gov.cn/state/outPortal/loginPortal.action)
+<h6 align = "center">[渝ICP备15010739号](http://www.miibeian.gov.cn/state/outPortal/loginPortal.action)
 
 
 
