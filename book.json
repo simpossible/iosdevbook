@@ -1,8 +1,11 @@
 {
-"plugins": [ "-search" ,"footer"],
+"plugins": [ "-search" ,"footer","github"],
 "pluginsConfig":{
 	"layout":{
 		"footerPath":"./footer/footer.html"
-	}
+	},
+	"github": {
+            "url": "https://github.com/simpossible/iosdevbook"
+        }
 }
 }
