@@ -1,5 +1,5 @@
 {
-"plugins": [ "-search" ,"page-footer"],
+"plugins": [ "-search" ,"footer"],
  "pluginsConfig": {
         "page-footer": {
             "description": "modified at",
