@@ -2,7 +2,7 @@
 "plugins": [ "-search" ,"footer"],
 "pluginsConfig":{
 	"layout":{
-		"footerPath":"./ip.md"
+		"footerPath":"./footer/footer.html"
 	}
 }
 }
