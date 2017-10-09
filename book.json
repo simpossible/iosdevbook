@@ -1,11 +1,15 @@
 {
-"plugins": [ "-search" ,"footer","github"],
+"plugins": [ "-search" ,"footer"],
 "pluginsConfig":{
 	"layout":{
 		"footerPath":"./footer/footer.html"
 	},
-	"github": {
-            "url": "https://github.com/simpossible/iosdevbook"
+	  "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "your duoshuo's shortname",
+            "theme": "default"
         }
+    }
+
 }
 }
