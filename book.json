@@ -3,13 +3,8 @@
 "pluginsConfig":{
 	"layout":{
 		"footerPath":"./footer/footer.html"
-	},
-	  "pluginsConfig": {
-        "duoshuo": {
-            "short_name": "your duoshuo's shortname",
-            "theme": "default"
-        }
-    }
+	}
+	  
 
 }
 }
