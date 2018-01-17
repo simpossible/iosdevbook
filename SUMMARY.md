@@ -15,12 +15,13 @@
   * [证书](证书.md)
   * [本地化字串](ben-di-hua-zi-chuan.md)
   * [Universal-Link](universal-link.md)
+  * [SearchBar](searchbar.md)
+* 编译错误集锦
 * [开发问题合集](开发问题合集.md)
   * [pod push](pod-push.md)
   * [编译错误集锦](bian-yi-cuo-wu-ji-jin.md)
   * [Reveal 破解](reveal-破解.md)
   * [ruby](ruby.md)
-* 编译错误集锦
 * [好文章推荐](好文章推荐.md)
 * [三方组件使用](三方组件使用.md)
 * [IOSTip](iostip.md)
