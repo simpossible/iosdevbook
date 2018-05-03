@@ -29,4 +29,6 @@
 * [一些思考](yi-xie-si-kao.md)
 * [mysql](mysql.md)
   * [远程连接](mysql/yuan-cheng-lian-jie.md)
+* [golang](golang.md)
+  * [xorm](golang/xorm.md)
 
