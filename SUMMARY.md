@@ -27,10 +27,13 @@
 * [IOSTip](iostip.md)
 * [React Native](react-native.md)
 * [一些思考](yi-xie-si-kao.md)
+* [apps](yi-xie-si-kao/apps.md)
+  * [知势](yi-xie-si-kao/apps/zhi-shi.md)
 * [mysql](mysql.md)
   * [远程连接](mysql/yuan-cheng-lian-jie.md)
 * [golang](golang.md)
   * [xorm](golang/xorm.md)
 * [linux服务器](linuxfu-wu-qi.md)
   * [ssh 更改端口](linuxfu-wu-qi/ssh-geng-gai-duan-kou.md)
+* [contactme](contactme.md)
 
